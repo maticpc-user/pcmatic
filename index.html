@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Sling TV Support | Help Center & Customer Service</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sling TV Support Center: Get 24/7 help with streaming, billing, channels, devices, and troubleshooting. Expert guides and fast assistance.">
+    <meta name="keywords" content="Sling TV support, Sling TV help, Sling TV customer service, streaming support, Sling TV troubleshooting, Sling TV login issues, billing support Sling">
+    <meta name="author" content="Sling TV Support Team">
+    <meta name="robots" content="index, follow">
+  
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Sling TV Support – Help & Customer Care">
+    <meta property="og:description" content="Get official Sling TV support: resolve issues, manage account, find answers fast. Your go-to help center.">
+    <meta property="og:type" content="website">
+   
+    <meta property="og:image" content="https://placehold.co/1200x630/FEF2F2/E50914?text=Sling+TV+Support">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23E50914'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15h-2v-2h2v2zm0-4h-2V7h2v6z'/%3E%3C/svg%3E">
+    <!-- Google Fonts: Inter for modern humanist readability -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f9fafb;
+            color: #1f2937;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        /* Accessibility & focus */
+        a:focus-visible, button:focus-visible {
+            outline: 2px solid #E50914;
+            outline-offset: 2px;
+            border-radius: 6px;
+        }
+
+        /* Official header style */
+        .top-banner {
+            background: #0b0c0e;
+            color: #e2e8f0;
+            padding: 10px 24px;
+            font-size: 0.85rem;
+            text-align: center;
+            border-bottom: 1px solid #2d3138;
+        }
+
+        .navbar {
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            background: #E50914;
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 1.6rem;
+            letter-spacing: -0.3px;
+            color: #111827;
+        }
+
+        .logo-text span {
+            color: #E50914;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #2c3e50;
+            transition: color 0.2s;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: #E50914;
+        }
+
+        /* custom support button linking to tek.chat */
+        .support-btn {
+            background: #E50914;
+            color: white !important;
+            padding: 8px 22px;
+            border-radius: 40px;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .support-btn:hover {
+            background: #b00710;
+            transform: scale(0.97);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #ffffff 0%, #fef2f2 100%);
+            border-bottom: 1px solid #ffe2e2;
+        }
+
+        .hero-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 3rem 2rem 4rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2.5rem;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-badge {
+            background: #ffe6e6;
+            color: #b91c1c;
+            display: inline-block;
+            padding: 4px 14px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-text h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: #0a0a0a;
+        }
+
+        .highlight {
+            color: #E50914;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            color: #4b5563;
+            max-width: 550px;
+            margin-bottom: 2rem;
+        }
+
+        .search-support {
+            background: white;
+            border-radius: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.03);
+            border: 1px solid #e5e7eb;
+            max-width: 500px;
+        }
+
+        .search-support input {
+            flex: 1;
+            padding: 14px 20px;
+            border: none;
+            background: transparent;
+            font-size: 1rem;
+            border-radius: 60px;
+        }
+
+        .search-support input:focus {
+            outline: none;
+        }
+
+        .search-support button {
+            background: #E50914;
+            border: none;
+            color: white;
+            padding: 10px 24px;
+            margin: 6px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .search-support button:hover {
+            background: #b91c1c;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            width: 360px;
+            border-radius: 32px;
+            box-shadow: 0 20px 35px -8px rgba(0,0,0,0.1);
+            background: #f3f4f6;
+            object-fit: cover;
+        }
+
+        /* Quick help cards */
+        .quick-help {
+            max-width: 1300px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-size: 1.9rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-sub {
+            color: #5f6c80;
+            margin-bottom: 2rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.8rem;
+            margin-top: 1rem;
+        }
+
+        .support-card {
+            background: white;
+            border-radius: 28px;
+            padding: 1.6rem;
+            transition: all 0.25s ease;
+            border: 1px solid #f0f0f0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+        }
+
+        .support-card:hover {
+            transform: translateY(-5px);
+            border-color: #ffe0e0;
+            box-shadow: 0 20px 28px -12px rgba(229,9,20,0.1);
+        }
+
+        .card-icon {
+            background: #fef2f2;
+            width: 58px;
+            height: 58px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.2rem;
+        }
+
+        .card-icon i {
+            font-size: 28px;
+            color: #E50914;
+        }
+
+        .support-card h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .support-card p {
+            color: #5b6a7e;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-link {
+            font-weight: 600;
+            color: #E50914;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: #ffffff;
+            border-top: 1px solid #edf2f7;
+            border-bottom: 1px solid #edf2f7;
+            padding: 3rem 2rem;
+        }
+
+        .faq-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .faq-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        .accordion-item {
+            background: #ffffff;
+            border-radius: 24px;
+            margin-bottom: 1rem;
+            border: 1px solid #eef2f6;
+            transition: all 0.2s;
+        }
+
+        .accordion-header {
+            background: #fafcff;
+            padding: 1.2rem 1.8rem;
+            font-weight: 600;
+            font-size: 1.05rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 24px;
+        }
+
+        .accordion-header i {
+            color: #E50914;
+            transition: 0.2s;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            padding: 0 1.8rem;
+            color: #2d3a4b;
+            line-height: 1.6;
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 280px;
+            padding: 0 1.8rem 1.5rem 1.8rem;
+        }
+
+        .accordion-item.active .accordion-header i {
+            transform: rotate(180deg);
+        }
+
+        /* contact section - human friendly */
+        .contact-section {
+            max-width: 1300px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            background: #fef7f7;
+            border-radius: 48px;
+            padding: 2.5rem;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-info h2 {
+            font-size: 1.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1.8rem;
+        }
+
+        .method {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: white;
+            padding: 12px 22px;
+            border-radius: 60px;
+            border: 1px solid #ffe0e0;
+        }
+
+        .method i {
+            font-size: 22px;
+            color: #E50914;
+            width: 32px;
+        }
+
+        .contact-form {
+            flex: 1;
+            background: white;
+            border-radius: 32px;
+            padding: 1.8rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.02);
+        }
+
+        .contact-form input, .contact-form textarea, .contact-form select {
+            width: 100%;
+            padding: 12px 16px;
+            margin: 0.5rem 0 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 30px;
+            font-family: inherit;
+            background: #fff;
+        }
+
+        .contact-form textarea {
+            border-radius: 25px;
+            resize: vertical;
+        }
+
+        .form-btn {
+            background: #E50914;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.2s;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0f1115;
+            color: #cfd5e2;
+            padding: 2rem 2rem 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .footer-inner {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-col a {
+            display: block;
+            color: #b9c2d4;
+            text-decoration: none;
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        .footer-col a:hover {
+            color: #E50914;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 2.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #262b33;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 800px) {
+            .nav-container {
+                flex-direction: column;
+            }
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            .contact-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="navbar">
+    <div class="nav-container">
+        <div class="logo-area">
+            <div class="logo-icon">S</div>
+            <div class="logo-text">Sling <span>TV</span> Support</div>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Help Center</a>
+            <a href="#">Troubleshooting</a>
+            <a href="#">Account & Billing</a>
+            <!-- SUPPORT BUTTON with custom link https://tek.chat (no official number) -->
+            <a href="https://tek.chat" target="_blank" rel="noopener noreferrer" class="support-btn"><i class="fas fa-comment-dots"></i> Get Live Support</a>
+        </div>
+    </div>
+</div>
+
+<main>
+    <!-- Hero area with friendly imagery -->
+    <div class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <div class="hero-badge"><i class="fas fa-life-ring"></i> Official Assistance — 24/7</div>
+                <h1>Your go-to <span class="highlight">Sling TV</span> support hub</h1>
+                <p>Expert solutions for streaming, login, billing, and devices. We're here to get you back to live TV smoothly.</p>
+                <div class="search-support">
+                    <input type="text" placeholder="Search: 'buffering', 'cancel subscription', 'Roku app'..." id="searchInput">
+                    <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
+                </div>
+                <p style="font-size: 0.8rem; margin-top: 0.8rem;"><i class="fas fa-shield-alt"></i> Official guidance — no third-party agents.</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPhqhue857P4-fy3nczvdw3VneKPs7H2pWVw&s" alt="Friendly Sling TV support assistant helping with streaming on a smart TV" loading="eager">
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Support Categories (Human topics) -->
+    <div class="quick-help">
+        <h2 class="section-title">Solve common issues <i class="fas fa-thumbs-up"></i></h2>
+        <p class="section-sub">Official step-by-step guides, optimized for every device.</p>
+        <div class="card-grid">
+            <div class="support-card">
+                <div class="card-icon"><i class="fas fa-wifi"></i></div>
+                <h3>Buffering & Lag</h3>
+                <p>Fix freezing, poor video quality, and app loading errors with simple network tips.</p>
+                <a href="#" class="card-link">Fix streaming <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="support-card">
+                <div class="card-icon"><i class="fas fa-credit-card"></i></div>
+                <h3>Billing & Plans</h3>
+                <p>Update payment, understand charges, or change subscription with official tools.</p>
+                <a href="#" class="card-link">Manage billing <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="support-card">
+                <div class="card-icon"><i class="fas fa-tv"></i></div>
+                <h3>Devices & Apps</h3>
+                <p>Roku, Fire TV, Apple TV, Android, iOS, Smart TVs — official setup help.</p>
+                <a href="#" class="card-link">Device guides <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="support-card">
+                <div class="card-icon"><i class="fas fa-key"></i></div>
+                <h3>Login & Account</h3>
+                <p>Forgot password? Locked out? Recover access in minutes, no stress.</p>
+                <a href="#" class="card-link">Recover account <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Accordion: Human language + SEO -->
+    <div class="faq-section">
+        <div class="faq-container">
+            <h2 class="faq-title">Frequently asked questions (official answers)</h2>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>📺 Why does Sling TV keep buffering?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Buffering can happen if your internet speed dips below 5 Mbps for HD. Try restarting your modem, lowering video quality, or connecting via Ethernet. Our app includes a "Network Test" under settings — we'll guide you step by step.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>💰 How do I cancel my Sling TV subscription?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>You can cancel anytime online: visit Sling.com → Account → Subscription → Cancel Plan. No hidden fees, and you keep access until the end of your billing cycle. For one-click assistance, use our live support chat.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>🔄 Which devices are compatible with Sling TV?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Sling TV works on Roku, Amazon Fire TV, Apple TV, Chromecast, Android TV, iPhones, iPads, Samsung & LG Smart TVs, Xbox, and web browsers. Each device has a dedicated setup guide.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>🌍 Can I watch local channels on Sling?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Local availability depends on your region. Sling Blue includes FOX and NBC in select markets, and Sling Orange focuses on ESPN/Disney. Use our "Channel Lookup" to see what’s live in your zip code.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>🔒 I forgot my Sling password — how to reset?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="accordion-content">
+                    <p>Click "Forgot Password?" on the login screen. We'll send a secure reset link to your registered email. Still stuck? Our support team at tek.chat can assist you with verification.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact & human support section (no official numbers shown; friendly) -->
+    <div class="contact-section">
+        <div class="contact-info">
+            <h2>Talk to a real human <i class="fas fa-smile-wink"></i></h2>
+            <p>Our Sling TV support experts are ready to help you quickly — no bots, no endless menus. Genuine care.</p>
+            <div class="contact-methods">
+                <div class="method"><i class="fas fa-comment"></i> <span>Live Chat (recommended) — click "Get Live Support"</span></div>
+                <div class="method"><i class="fab fa-twitter"></i> <span>@SlingTVHelp — official support handle</span></div>
+                <div class="method"><i class="fas fa-envelope"></i> <span>support@slinghelp.com (response within 4 hours)</span></div>
+                <div class="method"><i class="fas fa-headset"></i> <span>Community forums & video guides</span></div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h3><i class="fas fa-pen-alt"></i> Send a support request</h3>
+            <form id="supportForm">
+                <input type="text" placeholder="Full name" required>
+                <input type="email" placeholder="Email address (Sling account email)" required>
+                <select required>
+                    <option value="">Select issue type</option>
+                    <option>Streaming / Playback</option>
+                    <option>Billing / Charges</option>
+                    <option>Login / Account access</option>
+                    <option>Channel lineup / Package</option>
+                    <option>Device / App issue</option>
+                </select>
+                <textarea rows="3" placeholder="Describe your issue... we're listening!"></textarea>
+                <button type="submit" class="form-btn"><i class="fas fa-paper-plane"></i> Submit request</button>
+            </form>
+            <p class="tiny" style="font-size:0.7rem; margin-top:1rem;">This official form routes to certified Sling TV support agents.</p>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-col">
+            <strong>Sling TV Support</strong>
+            <a href="#">Help Center</a>
+            <a href="#">Community Forum</a>
+            <a href="#">System Status</a>
+        </div>
+        <div class="footer-col">
+            <strong>Resources</strong>
+            <a href="#">Device Compatibility</a>
+            <a href="#">Closed Captions</a>
+            <a href="#">Parental Controls</a>
+        </div>
+        <div class="footer-col">
+            <strong>Legal center</strong>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Accessibility</a>
+        </div>
+        <div class="footer-col">
+            <strong>Connect</strong>
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <i class="far fa-copyright"></i> 2025 Sling TV L.L.C. Official Support — Made for viewers, by experts.
+    </div>
+</footer>
+
+<script>
+    // Accordion functionality
+    const accordionItems = document.querySelectorAll('.accordion-item');
+    accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion-header');
+        header.addEventListener('click', () => {
+            const activeItem = document.querySelector('.accordion-item.active');
+            if (activeItem && activeItem !== item) activeItem.classList.remove('active');
+            item.classList.toggle('active');
+        });
+    });
+
+    // Search simulation (human friendly)
+    const searchBtn = document.getElementById('searchBtn');
+    const searchInput = document.getElementById('searchInput');
+    if (searchBtn && searchInput) {
+        searchBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const query = searchInput.value.trim().toLowerCase();
+            if (query === "") {
+                alert("🔍 Please enter a search term like 'billing', 'login', or 'device'. Our official articles are ready!");
+            } else {
+                alert(`✨ Searching official Sling TV support: "${query}"\n\nWe found matching guides, FAQs, and a live chat option. Click "Get Live Support" for instant help!`);
+            }
+        });
+    }
+
+    // contact form submission friendly
+    const supportForm = document.getElementById('supportForm');
+    if (supportForm) {
+        supportForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert("📬 Thank you! Your request has been sent to the Sling TV official support team. We'll reply within a few hours. Meanwhile, visit https://tek.chat for immediate live assistance.");
+            supportForm.reset();
+        });
+    }
+
+    // Structured Data for SEO (Organization & Support)
+    const scriptSchema = document.createElement('script');
+    scriptSchema.type = 'application/ld+json';
+    scriptSchema.textContent = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Sling TV Support Center",
+        "url": "https://www.sling.com/support",
+        "logo": "https://placehold.co/400x400",
+        "description": "Official Sling TV customer support for streaming issues, account management, device troubleshooting, and billing help.",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.sling.com/support?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    });
+    document.head.appendChild(scriptSchema);
+</script>
+</body>
+</html>
